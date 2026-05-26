@@ -61,7 +61,7 @@ function MobileOverlay({
               className="flex items-center gap-3 cursor-pointer"
             >
               <div className="w-9 h-9 rounded-xl overflow-hidden border border-solar-border bg-transparent">
-                <img src="/logo.jpg" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
+                <img src="/logo.png" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
               </div>
               <span className="font-heading font-bold text-[15px] text-solar-text">
                 MyHome <span style={{ color: '#F5A623' }}>Solar</span>
@@ -170,7 +170,7 @@ export default function Navbar() {
               aria-label="MyHome Solar — Home"
             >
               <div className="w-9 h-9 rounded-xl overflow-hidden border border-solar-border bg-transparent shadow-sm group-hover:scale-105 transition-transform duration-200 shrink-0">
-                <img src="/logo.jpg" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
+                <img src="/logo.png" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-heading font-bold text-[15px] tracking-tight text-solar-text">

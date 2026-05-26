@@ -396,7 +396,7 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="relative z-10 w-full">
-        <div className="section-wrapper w-full">
+        <div className="section-wrapper w-full !pt-6 md:!pt-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
 
             {/* LEFT: Text */}

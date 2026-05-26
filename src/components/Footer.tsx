@@ -36,7 +36,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-lg overflow-hidden border border-solar-border bg-transparent flex-shrink-0">
-                <img src="/logo.jpg" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
+                <img src="/logo.png" alt="MyHome Solar" className="w-full h-full object-cover scale-[1.25] transition-transform" />
               </div>
               <div>
                 <span className="font-heading font-bold text-lg text-solar-text block leading-tight">
