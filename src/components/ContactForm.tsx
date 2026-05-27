@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   const inputClasses =
-    'w-full rounded-xl px-4 py-3 text-sm font-body outline-none transition-all duration-200 placeholder:text-solar-text-dim border focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623]';
+    'w-full rounded-xl px-4 py-3 text-sm font-body outline-none transition-all duration-200 placeholder:text-solar-text-dim border focus:ring-2 focus:ring-[var(--solar-gold)]/30 focus:border-[var(--solar-gold)]';
 
   return (
     <section id="contact" className="relative overflow-hidden" style={{ background: 'var(--solar-bg)' }}>
@@ -88,7 +88,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-solar-text-muted text-xs font-medium mb-1.5 uppercase tracking-wider">
-                        Phone <span style={{ color: '#F5A623' }}>*</span>
+                        Phone <span style={{ color: 'var(--solar-gold)' }}>*</span>
                       </label>
                       <input
                         type="tel"
@@ -212,14 +212,14 @@ const ContactForm = () => {
                 <div key={item.title} className="glass-card rounded-xl p-4 flex items-start gap-3.5 hover:!translate-y-0">
                   <div
                     className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(245,166,35,0.08)', color: '#F5A623' }}
+                    style={{ background: 'rgba(197,155,63,0.08)', color: 'var(--solar-gold)' }}
                   >
                     {item.icon}
                   </div>
                   <div>
                     <p className="text-xs text-solar-text-muted font-medium uppercase tracking-wider mb-0.5">{item.title}</p>
                     {item.href ? (
-                      <a href={item.href} className="text-sm text-solar-text hover:text-[#F5A623] transition-colors font-body">
+                      <a href={item.href} className="text-sm text-solar-text hover:text-[var(--solar-gold)] transition-colors font-body">
                         {item.content}
                       </a>
                     ) : (

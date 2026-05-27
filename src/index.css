@@ -6,49 +6,49 @@
 @tailwind utilities;
 
 /* =====================================================
-   LIGHT MODE — Warm Apple-like neutrals
+   LIGHT MODE — Premium Periwinkle, Gold & Violet
    ===================================================== */
 :root {
-  --solar-bg:         #FAFAF8;
-  --solar-bg-light:   #F3F2EF;
+  --solar-bg:         #F4F5FA; /* Soft periwinkle/lavender mist background */
+  --solar-bg-light:   #E8EAF4; /* Light periwinkle-grey from the graphic */
   --solar-card:       #FFFFFF;
-  --solar-border:     #E8E6E1;
-  --solar-text:       #1A1A1A;
-  --solar-text-muted: #6B6B6B;
-  --solar-text-dim:   #A3A3A3;
-  --solar-emerald:    #059669;
-  --solar-gold:       #C88A10; /* Darker readable gold for light mode */
-  --solar-gold-bright:#D97706; /* High readability amber for light mode */
+  --solar-border:     rgba(124, 58, 237, 0.10); /* Soft ultraviolet border */
+  --solar-text:       #141226; /* Deep charcoal-violet text */
+  --solar-text-muted: #63617A;
+  --solar-text-dim:   #9B98B0;
+  --solar-emerald:    #7C3AED; /* Electric violet accent */
+  --solar-gold:       #B38F3B; /* Premium antique/champagne gold */
+  --solar-gold-bright:#D4AF37; /* Sunlit metallic gold */
 
-  --shadow-card:    0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.05);
-  --shadow-card-lg: 0 4px 20px rgba(0,0,0,0.08), 0 12px 40px rgba(0,0,0,0.06);
-  --nav-bg:         rgba(250,250,248,0.88);
-  --nav-border:     rgba(0,0,0,0.06);
-  --nav-overlay-bg: rgba(250,250,248,0.95);
-  --gold-heading:   #C88A10;
+  --shadow-card:    0 1px 2px rgba(124,58,237,0.02), 0 4px 16px rgba(124,58,237,0.03);
+  --shadow-card-lg: 0 4px 20px rgba(124,58,237,0.06), 0 12px 40px rgba(124,58,237,0.05);
+  --nav-bg:         rgba(244,245,250,0.88);
+  --nav-border:     rgba(124,58,237,0.06);
+  --nav-overlay-bg: rgba(244,245,250,0.95);
+  --gold-heading:   #A37E2C;
 }
 
 /* =====================================================
-   DARK MODE — Rich & dramatic
+   DARK MODE — Cosmic Midnight, Gold & Ultraviolet
    ===================================================== */
 .dark {
-  --solar-bg:         #0A0A0A;
-  --solar-bg-light:   #111111;
-  --solar-card:       #171717;
-  --solar-border:     #262626;
-  --solar-text:       #FAFAF9;
-  --solar-text-muted: #A8A8A8;
-  --solar-text-dim:   #525252;
-  --solar-emerald:    #10B981;
-  --solar-gold:       #F5A623; /* Bright gold in dark mode */
-  --solar-gold-bright:#FFD700; /* Bright yellow in dark mode */
+  --solar-bg:         #09080F; /* Cosmic Midnight dark base */
+  --solar-bg-light:   #11101A;
+  --solar-card:       #161424; /* Deep violet-tinted slate card */
+  --solar-border:     rgba(124, 58, 237, 0.16); /* Translucent electric violet border */
+  --solar-text:       #EFF1F9; /* Clean periwinkle-white text */
+  --solar-text-muted: #9391A6;
+  --solar-text-dim:   #4B4A5D;
+  --solar-emerald:    #A78BFA; /* Bright neon violet accent */
+  --solar-gold:       #C59B3F; /* Metallic solar gold */
+  --solar-gold-bright:#E5C37E; /* Sunlit champagne gold */
 
-  --shadow-card:    0 1px 3px rgba(0,0,0,0.5), 0 8px 24px rgba(0,0,0,0.35);
-  --shadow-card-lg: 0 8px 32px rgba(0,0,0,0.5), 0 24px 60px rgba(0,0,0,0.35);
-  --nav-bg:         rgba(10,10,10,0.90);
-  --nav-border:     rgba(255,255,255,0.06);
-  --nav-overlay-bg: rgba(10,10,10,0.95);
-  --gold-heading:   #F5A623;
+  --shadow-card:    0 1px 3px rgba(0,0,0,0.45), 0 8px 24px rgba(124,58,237,0.08);
+  --shadow-card-lg: 0 8px 32px rgba(0,0,0,0.45), 0 24px 60px rgba(124,58,237,0.12);
+  --nav-bg:         rgba(9,8,15,0.90);
+  --nav-border:     rgba(124,58,237,0.10);
+  --nav-overlay-bg: rgba(9,8,15,0.95);
+  --gold-heading:   #E5C37E;
 }
 
 /* =====================================================
@@ -87,13 +87,13 @@ section {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--solar-bg); }
 ::-webkit-scrollbar-thumb {
-  background: #F5A623;
+  background: var(--solar-gold);
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover { background: #FFD700; }
+::-webkit-scrollbar-thumb:hover { background: var(--solar-gold-bright); }
 
 ::selection {
-  background: rgba(245, 166, 35, 0.25);
+  background: rgba(124, 58, 237, 0.25);
   color: var(--solar-text);
 }
 
@@ -150,9 +150,9 @@ section {
   }
 
   .glass-card:hover {
-    box-shadow: 0 12px 30px -10px rgba(245, 166, 35, 0.12), var(--shadow-card-lg);
-    transform: translateY(-6px) scale(1.02);
-    border-color: rgba(245, 166, 35, 0.35);
+    box-shadow: 0 12px 30px -10px rgba(124, 58, 237, 0.15), var(--shadow-card-lg);
+    transform: translateY(-5px) scale(1.015);
+    border-color: rgba(124, 58, 237, 0.25);
   }
 
   .gold-glow-hover {
@@ -162,15 +162,15 @@ section {
   }
 
   .gold-glow-hover:hover {
-    box-shadow: 0 0 25px 2px rgba(245, 166, 35, 0.18), var(--shadow-card-lg);
-    transform: translateY(-6px) scale(1.02);
-    border-color: rgba(245, 166, 35, 0.4);
+    box-shadow: 0 0 25px 2px rgba(197, 155, 63, 0.15), var(--shadow-card-lg);
+    transform: translateY(-5px) scale(1.015);
+    border-color: rgba(197, 155, 63, 0.35);
   }
 
   /* Micro-animations for card children on hover */
   .glass-card:hover .card-icon {
-    transform: scale(1.12) translateY(-2px);
-    color: var(--solar-gold) !important;
+    transform: scale(1.1) translateY(-2px);
+    color: var(--solar-gold-bright) !important;
   }
 
   .card-icon {
@@ -181,8 +181,8 @@ section {
   /* ---- Primary CTA ---- */
   .shimmer-btn {
     @apply relative overflow-hidden font-heading font-semibold;
-    background: #F5A623;
-    color: #09090B;
+    background: var(--solar-gold);
+    color: #09080F;
     transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
     letter-spacing: -0.01em;
   }
@@ -194,13 +194,13 @@ section {
     left: -100%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.40), transparent);
     animation: shimmer-sweep 2.5s ease-in-out infinite;
   }
 
   .shimmer-btn:hover {
-    background: #FFD700;
-    box-shadow: 0 4px 20px rgba(245,166,35,0.4);
+    background: var(--solar-gold-bright);
+    box-shadow: 0 4px 20px rgba(197, 155, 63, 0.3);
     transform: translateY(-1px);
   }
 
@@ -214,9 +214,9 @@ section {
   }
 
   .outline-btn:hover {
-    border-color: #F5A623;
-    color: #F5A623;
-    background: rgba(245,166,35,0.05);
+    border-color: var(--solar-gold);
+    color: var(--solar-gold);
+    background: rgba(197, 155, 63, 0.05);
   }
 
   /* ---- Nav link ---- */
@@ -237,7 +237,7 @@ section {
     left: 0;
     width: 0;
     height: 1.5px;
-    background: #F5A623;
+    background: var(--solar-gold);
     transition: width 0.2s ease;
   }
 
@@ -248,7 +248,7 @@ section {
   .gold-slider {
     @apply w-full h-1.5 rounded-full appearance-none cursor-pointer;
     background: var(--solar-border);
-    accent-color: #F5A623;
+    accent-color: var(--solar-gold);
   }
 
   .gold-slider::-webkit-slider-thumb {
@@ -256,8 +256,8 @@ section {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #F5A623;
-    box-shadow: 0 0 0 3px rgba(245,166,35,0.2);
+    background: var(--solar-gold);
+    box-shadow: 0 0 0 3px rgba(197, 155, 63, 0.15);
     cursor: pointer;
     border: 2px solid white;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -265,14 +265,14 @@ section {
 
   .gold-slider::-webkit-slider-thumb:hover {
     transform: scale(1.15);
-    box-shadow: 0 0 0 5px rgba(245,166,35,0.15);
+    box-shadow: 0 0 0 5px rgba(197, 155, 63, 0.2);
   }
 
   .gold-slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #F5A623;
+    background: var(--solar-gold);
     cursor: pointer;
     border: 2px solid white;
   }

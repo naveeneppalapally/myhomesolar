@@ -186,7 +186,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
         <div
           className="w-11 h-11 rounded-full flex items-center justify-center text-sm font-bold text-solar-bg shrink-0"
           style={{
-            background: 'linear-gradient(135deg, #F5A623, #FFD700)',
+            background: 'linear-gradient(135deg, var(--solar-gold), var(--solar-gold-bright))',
           }}
         >
           {initials}

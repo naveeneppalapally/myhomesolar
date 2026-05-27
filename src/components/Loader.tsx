@@ -29,7 +29,7 @@ const Loader = () => {
             className="absolute w-[400px] h-[400px] rounded-full opacity-20 blur-[120px]"
             style={{
               background:
-                'radial-gradient(circle, rgba(245,166,35,0.4) 0%, rgba(255,215,0,0.15) 50%, transparent 70%)',
+                'radial-gradient(circle, rgba(197,155,63,0.4) 0%, rgba(229,195,126,0.15) 50%, transparent 70%)',
             }}
           />
 
@@ -40,8 +40,8 @@ const Loader = () => {
               className="absolute inset-0 rounded-full"
               style={{
                 border: '2px solid transparent',
-                borderTopColor: '#F5A623',
-                borderRightColor: '#FFD700',
+                borderTopColor: 'var(--solar-gold)',
+                borderRightColor: 'var(--solar-gold-bright)',
               }}
               animate={{ rotate: 360 }}
               transition={{
@@ -56,8 +56,8 @@ const Loader = () => {
               className="absolute inset-2 rounded-full"
               style={{
                 border: '1.5px solid transparent',
-                borderBottomColor: '#FFD700',
-                borderLeftColor: 'rgba(245,166,35,0.5)',
+                borderBottomColor: 'var(--solar-gold-bright)',
+                borderLeftColor: 'rgba(197,155,63,0.5)',
               }}
               animate={{ rotate: -360 }}
               transition={{
@@ -90,7 +90,7 @@ const Loader = () => {
                 className="absolute w-0.5 h-4"
                 style={{
                   background:
-                    'linear-gradient(to top, transparent, #F5A623)',
+                    'linear-gradient(to top, transparent, var(--solar-gold))',
                   transformOrigin: 'center 46px',
                   transform: `rotate(${i * 45}deg)`,
                 }}
@@ -135,7 +135,7 @@ const Loader = () => {
             <h1
               className="font-heading text-2xl sm:text-3xl font-bold tracking-wider"
               style={{
-                background: 'linear-gradient(135deg, #F5A623, #FFD700)',
+                background: 'linear-gradient(135deg, var(--solar-gold), var(--solar-gold-bright))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
@@ -156,12 +156,12 @@ const Loader = () => {
           {/* Loading bar */}
           <motion.div
             className="absolute bottom-16 w-40 h-0.5 rounded-full overflow-hidden"
-            style={{ backgroundColor: 'rgba(245,166,35,0.15)' }}
+            style={{ backgroundColor: 'rgba(197,155,63,0.15)' }}
           >
             <motion.div
               className="h-full rounded-full"
               style={{
-                background: 'linear-gradient(90deg, #F5A623, #FFD700)',
+                background: 'linear-gradient(90deg, var(--solar-gold), var(--solar-gold-bright))',
               }}
               initial={{ width: '0%' }}
               animate={{ width: '100%' }}

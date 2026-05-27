@@ -18,15 +18,15 @@ const cards = [
   {
     icon: Leaf,
     iconColor: 'var(--solar-emerald)',
-    iconBg: 'rgba(5,150,105,0.08)',
+    iconBg: 'rgba(124,58,237,0.08)',
     title: 'Clean Energy. Zero Guilt.',
     description:
       '1 kW solar = 1.5 metric tons CO₂ saved/year = planting 22 trees. 5 kW system = 110 trees planted every year!',
   },
   {
     icon: BarChart3,
-    iconColor: '#F5A623',
-    iconBg: 'rgba(245,166,35,0.08)',
+    iconColor: 'var(--solar-gold)',
+    iconBg: 'rgba(197,155,63,0.08)',
     title: 'Best ROI in India',
     description:
       'Solar delivers 30%+ annual return — beats FDs, gold, mutual funds. Payback period: just 3–5 years. Generates for 25+ years.',

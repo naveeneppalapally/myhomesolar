@@ -6,7 +6,7 @@ const Marquee = () => {
     <div
       className="relative z-20 w-full overflow-hidden py-3"
       style={{
-        background: 'linear-gradient(90deg, #F5A623, #FFD700, #F5A623)',
+        background: 'linear-gradient(90deg, var(--solar-gold), var(--solar-gold-bright), var(--solar-gold))',
       }}
       aria-label="Scrolling announcements"
       role="marquee"

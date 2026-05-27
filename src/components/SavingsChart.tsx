@@ -31,8 +31,8 @@ const investmentBars: InvestmentBar[] = [
   {
     label: 'Solar (with subsidy)',
     percentage: 35,
-    color: '#F5A623',
-    gradient: 'linear-gradient(90deg, #F5A623, #FFD700)',
+    color: 'var(--solar-gold)',
+    gradient: 'linear-gradient(90deg, var(--solar-gold), var(--solar-gold-bright))',
   },
   {
     label: 'Mutual Funds',
@@ -252,8 +252,8 @@ const SavingsChart = () => {
                 >
                   <defs>
                     <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#F5A623" stopOpacity={0.4} />
-                      <stop offset="100%" stopColor="#F5A623" stopOpacity={0.02} />
+                      <stop offset="0%" stopColor="var(--solar-gold)" stopOpacity={0.4} />
+                      <stop offset="100%" stopColor="var(--solar-gold)" stopOpacity={0.02} />
                     </linearGradient>
                     <linearGradient
                       id="emeraldGrad"
@@ -262,10 +262,10 @@ const SavingsChart = () => {
                       x2="0"
                       y2="1"
                     >
-                      <stop offset="0%" stopColor="#10B981" stopOpacity={0.4} />
+                      <stop offset="0%" stopColor="var(--solar-emerald)" stopOpacity={0.4} />
                       <stop
                         offset="100%"
-                        stopColor="#10B981"
+                        stopColor="var(--solar-emerald)"
                         stopOpacity={0.02}
                       />
                     </linearGradient>
@@ -314,7 +314,7 @@ const SavingsChart = () => {
                     type="monotone"
                     dataKey="flatRate"
                     name="flatRate"
-                    stroke="#F5A623"
+                    stroke="var(--solar-gold)"
                     strokeWidth={2}
                     fill="url(#goldGrad)"
                     animationDuration={2000}
@@ -325,7 +325,7 @@ const SavingsChart = () => {
                     type="monotone"
                     dataKey="risingRate"
                     name="risingRate"
-                    stroke="#10B981"
+                    stroke="var(--solar-emerald)"
                     strokeWidth={2}
                     fill="url(#emeraldGrad)"
                     animationDuration={2000}

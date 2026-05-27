@@ -55,15 +55,15 @@ export function SolarPanelSVG() {
       <defs>
         {/* Glow and shadows */}
         <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#F5A623" stopOpacity="0.25" />
-          <stop offset="60%" stopColor="#FFD700" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="#F5A623" stopOpacity="0" />
+          <stop offset="0%" stopColor="#C59B3F" stopOpacity="0.25" />
+          <stop offset="60%" stopColor="#E5C37E" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="#C59B3F" stopOpacity="0" />
         </radialGradient>
         
         {/* Sky/Atmosphere dynamic gradient */}
         <radialGradient id="skyAtmosphere" cx="70%" cy="30%" r="65%">
-          <stop offset="0%" stopColor="#F5A623" stopOpacity="0.12" />
-          <stop offset="50%" stopColor="#10B981" stopOpacity="0.03" />
+          <stop offset="0%" stopColor="#C59B3F" stopOpacity="0.12" />
+          <stop offset="50%" stopColor="#7C3AED" stopOpacity="0.03" />
           <stop offset="100%" stopColor="transparent" stopOpacity="0" />
         </radialGradient>
 
@@ -76,9 +76,9 @@ export function SolarPanelSVG() {
 
         {/* Silicon cell base gradient */}
         <linearGradient id="siliconCell" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#122552" />
-          <stop offset="50%" stopColor="#0A1838" />
-          <stop offset="100%" stopColor="#050C1E" />
+          <stop offset="0%" stopColor="#1B1736" />
+          <stop offset="50%" stopColor="#100D22" />
+          <stop offset="100%" stopColor="#080712" />
         </linearGradient>
 
         {/* Diagonal glass reflection */}
@@ -90,8 +90,8 @@ export function SolarPanelSVG() {
 
         {/* Clean Energy Pulse */}
         <linearGradient id="energyGold" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFD700" />
-          <stop offset="100%" stopColor="#F5A623" />
+          <stop offset="0%" stopColor="#E5C37E" />
+          <stop offset="100%" stopColor="#C59B3F" />
         </linearGradient>
 
         {/* Lucide-like Glow filter */}
@@ -112,7 +112,7 @@ export function SolarPanelSVG() {
       <g opacity="0.25">
         <circle cx="200" cy="200" r="140" stroke="var(--solar-border)" strokeWidth="1" strokeDasharray="5 15" />
         <ellipse cx="200" cy="200" rx="170" ry="85" stroke="var(--solar-border)" strokeWidth="1" strokeDasharray="8 6" transform="rotate(-15 200 200)" />
-        <ellipse cx="200" cy="200" rx="145" ry="60" stroke="#FFD700" strokeWidth="0.75" strokeDasharray="3 12" transform="rotate(25 200 200)">
+        <ellipse cx="200" cy="200" rx="145" ry="60" stroke="#E5C37E" strokeWidth="0.75" strokeDasharray="3 12" transform="rotate(25 200 200)">
           <animateTransform
             attributeName="transform"
             type="rotate"
@@ -129,7 +129,7 @@ export function SolarPanelSVG() {
         {/* Sun source */}
         <circle cx="310" cy="90" r="18" fill="url(#energyGold)" />
         {/* Radiating particle circles */}
-        <circle cx="310" cy="90" r="30" stroke="#FFD700" strokeWidth="0.5" strokeDasharray="2 6" opacity="0.5">
+        <circle cx="310" cy="90" r="30" stroke="#E5C37E" strokeWidth="0.5" strokeDasharray="2 6" opacity="0.5">
           <animate attributeName="r" values="24;42;24" dur="4s" repeatCount="indefinite" />
         </circle>
         
@@ -143,7 +143,7 @@ export function SolarPanelSVG() {
               y1={90 + Math.sin(rad) * 22}
               x2={310 + Math.cos(rad) * 38}
               y2={90 + Math.sin(rad) * 38}
-              stroke="#FFD700"
+              stroke="#E5C37E"
               strokeWidth="1.5"
               strokeLinecap="round"
               opacity="0.6"
@@ -167,18 +167,18 @@ export function SolarPanelSVG() {
         {/* 3D Depth Plate Behind Frame (Bevel Edge) */}
         <polygon
           points="15,225 265,225 278,215 28,215"
-          fill="#0B132B"
+          fill="#09080F"
         />
         <polygon
           points="265,25 278,15 278,215 265,225"
-          fill="#1E2B4B"
+          fill="#1B162E"
         />
 
         {/* Main Panel Outer Frame */}
         <polygon
           points="0,210 250,210 265,10 15,10"
           fill="url(#panelBevel)"
-          stroke="#475B82"
+          stroke="#3E3466"
           strokeWidth="1.5"
         />
 
@@ -238,13 +238,13 @@ export function SolarPanelSVG() {
         <polygon
           points="168,198 237,198 241,111 172,111"
           fill="url(#siliconCell)"
-          stroke="#2A3F6D"
+          stroke="#3E3466"
           strokeWidth="0.75"
         />
         <polygon points="168,198 237,198 241,111 172,111" fill="url(#glassReflection)" />
 
         {/* Cell Grid Lines and Busbars (Golden Highlights) */}
-        <g stroke="#F5A623" strokeWidth="0.5" opacity="0.35">
+        <g stroke="#C59B3F" strokeWidth="0.5" opacity="0.35">
           {/* Main vertical busbars */}
           <line x1="59" y1="20" x2="52" y2="200" />
           <line x1="134" y1="20" x2="128" y2="200" strokeWidth="0.75" />
@@ -253,11 +253,11 @@ export function SolarPanelSVG() {
 
         {/* Glowing Energy Grid Nodes */}
         <g filter="url(#vectorGlow)">
-          <circle cx="131" cy="110" r="3.5" fill="#FFD700" />
-          <circle cx="56" cy="110" r="2.5" fill="#FFD700" />
-          <circle cx="206" cy="110" r="2.5" fill="#FFD700" />
+          <circle cx="131" cy="110" r="3.5" fill="#E5C37E" />
+          <circle cx="56" cy="110" r="2.5" fill="#E5C37E" />
+          <circle cx="206" cy="110" r="2.5" fill="#E5C37E" />
           
-          <circle cx="131" cy="110" r="6" stroke="#FFD700" strokeWidth="0.5" opacity="0.5">
+          <circle cx="131" cy="110" r="6" stroke="#E5C37E" strokeWidth="0.5" opacity="0.5">
             <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite" />
           </circle>
         </g>
@@ -274,14 +274,14 @@ export function SolarPanelSVG() {
       {/* ── Orbiting Clean Energy Particle (Animated Ring Flight) ── */}
       <g filter="url(#vectorGlow)">
         {/* Glowing flight particle */}
-        <circle cx="200" cy="200" r="4" fill="#FFD700">
+        <circle cx="200" cy="200" r="4" fill="#E5C37E">
           <animateMotion
             path="M -135,0 A 135,50 0 1,1 135,0 A 135,50 0 1,1 -135,0"
             dur="6s"
             repeatCount="indefinite"
           />
         </circle>
-        <circle cx="200" cy="200" r="8" stroke="#FFD700" strokeWidth="0.5" opacity="0.5">
+        <circle cx="200" cy="200" r="8" stroke="#E5C37E" strokeWidth="0.5" opacity="0.5">
           <animateMotion
             path="M -135,0 A 135,50 0 1,1 135,0 A 135,50 0 1,1 -135,0"
             dur="6s"
@@ -293,10 +293,10 @@ export function SolarPanelSVG() {
 
       {/* ── Lightning Core Floating Energy Bolt Emblem ── */}
       <g transform="translate(182, 335) scale(1.3)" filter="url(#vectorGlow)">
-        <circle cx="12" cy="12" r="11" fill="rgba(245, 166, 35, 0.08)" stroke="rgba(245,166,35,0.2)" strokeWidth="0.75" />
+        <circle cx="12" cy="12" r="11" fill="rgba(197, 155, 63, 0.08)" stroke="rgba(197, 155, 63, 0.2)" strokeWidth="0.75" />
         <path
           d="M12 2 L6 12 L11 12 L8 22 L18 10 L13 10 L16 2 Z"
-          fill="#FFD700"
+          fill="#E5C37E"
           opacity="0.9"
         >
           <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
